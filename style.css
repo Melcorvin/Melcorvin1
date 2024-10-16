@@ -1,0 +1,223 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  transition: all 0.2s linear;
+}
+html {
+  font-size: 61%;
+  overflow-x: hidden;
+}
+body {
+  background: url("background1.jpg") no-repeat center center/cover;
+  overflow: hidden;
+  padding-left: 35rem;
+}
+section {
+  min-height: 100vh;
+  padding: 1rem;
+}
+.btn:hover {
+  background: white;
+  color: black;
+  box-shadow: 0 0 10px red;
+}
+.heading {
+  text-align: center;
+  margin: 0 6rem;
+  font-size: 4rem;
+  padding: 3rem;
+  border-bottom: 0.1rem solid white;
+  color: white;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 800;
+  height: 125%;
+  width: 34rem;
+  background: url("background1.jpg") no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  text-align: center;
+}
+.images img {
+  height: 17rem;
+  width: 17rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 0.9rem solid rgba(109, 109, 109, 0.788);
+  position: absolute;
+  left: 50%;
+  margin-top: -26rem;
+  transform: translateX(-50%);
+  transition: bottom 1s, left 1s;
+}
+.images:hover .boy {
+  left: 45%;
+}
+.eye img {
+  height: 11rem;
+  width: 11rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+header .user .name {
+  font-weight: bolder;
+  font-size: 2.3rem;
+  margin-top: -4rem;
+  padding: 1.9rem;
+  color: white;
+}
+
+header .user .post {
+  font-size: 1.5rem;
+  color: white;
+  animation: neonize 3s ease-in-out infinite alternate;
+}
+header .navbar {
+  width: 80%;
+}
+header .navbar ul {
+  list-style: none;
+  padding: 0.1rem 1.5rem;
+}
+header .navbar ul li a {
+  font-weight: smaller;
+  display: block;
+  padding: 0.7rem;
+  margin: 1rem 0;
+  background: #222;
+  font-size: 2rem;
+  border-radius: 3rem;
+  color: white;
+}
+header .navbar ul li a:hover {
+  background: white;
+  color: black;
+  box-shadow: 0 0 10px red;
+}
+.home {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  padding: 0 15rem;
+}
+.home h3 {
+  font-size: 2.5rem;
+  color: white;
+  padding: 0.1rem;
+}
+.home h1 {
+  font-size: 4rem;
+  color: white;
+  animation: neonize 4s ease-in-out infinite alternate;
+}
+.home p {
+  font-size: 2rem;
+  color: white;
+  padding: 1rem 0;
+}
+.home-sci a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: #222;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  margin-left: 8px;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.home-sci a:hover {
+  background: white;
+  color: black;
+  box-shadow: 0 0 10px red;
+}
+
+.contact h1 {
+  text-align: center;
+  margin-bottom: -60px;
+  color: white;
+  animation: neonize 4s ease-in-out infinite alternate;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: transparent;
+  padding: 90px;
+  border-radius: 30px;
+}
+
+label {
+  color: #fff;
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+button {
+  background-color: #222;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
+
+button:hover {
+  background: white;
+  color: black;
+  box-shadow: 0 0 10px red;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@keyframes neonize {
+  from {
+    text-shadow: 0 0 4px #fff, 0 0 10px #fff, 0 0 30px red, 0 0 50px red,
+      0 0 70px red, 0 0 90px red;
+  }
+  to {
+    text-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 15px red, 0 0 25px red,
+      0 0 35px red, 0 0 45px red;
+  }
+}
