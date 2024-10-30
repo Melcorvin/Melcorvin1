@@ -221,3 +221,47 @@ button:hover {
       0 0 35px red, 0 0 45px red;
   }
 }
+
+.about .row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding:1rem 0;
+}
+.about .row .info{
+  padding:2rem 1rem;
+  padding-left: 6rem;
+}
+.about .row .info h3{
+  font-size: 2rem;
+  color: whitesmoke;
+  padding:1rem 0;
+  font-weight: bold;
+}
+.about .row .info h3 span{
+  color: white;
+  padding:0 .5rem;
+}
+.about .row .counter{
+  flex:1 1 48rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.about .row .counter .box{
+  width:20rem;
+  background: url(background1.jpg) no-repeat center center/cover;
+  text-align: center;
+  padding:2rem 1rem;
+  margin:2rem;
+}
+.about .row .counter .box span{
+  font-size: 2.3rem;
+  color: white;
+  animation: neonize 10s ease-in-out infinite alternate;
+}
+.about .row .counter .box h2{
+  font-size: 1.5rem;
+  color:#fff;
+}
